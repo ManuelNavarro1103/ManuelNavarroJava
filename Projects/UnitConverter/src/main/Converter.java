@@ -23,15 +23,13 @@ public class Converter {
 			System.out.println("-- Enter 3 to Exit");
 			
 			Scanner menuSelect = new Scanner(System.in);
-			String tempMenuSelect = menuSelect.nextLine();
-			menuSelection = Integer.parseInt(tempMenuSelect);
+			menuSelection = menuSelect.nextInt();
 			
 			//input validation
 			while (menuSelection <1 || menuSelection > 3) {
 				System.out.println("Value entered was not correct please try again.");
 				Scanner menuSelect1 = new Scanner(System.in);
-				String tempMenuSelect1 = menuSelect1.nextLine();
-				menuSelection = Integer.parseInt(tempMenuSelect1);
+				menuSelection = menuSelect.nextInt();
 			}
 			
 			
@@ -44,37 +42,32 @@ public class Converter {
 				System.out.println("-- Enter 3 for Kilometers to Miles");
 				
 				Scanner milesSelect = new Scanner(System.in);
-				String tempMilesSelect = milesSelect.nextLine();
-				conversionSelection = Integer.parseInt(tempMilesSelect);
+				conversionSelection = milesSelect.nextInt();
 				
 				//input validation
 				while (conversionSelection < 0 || conversionSelection > 3) {
 					System.out.println("Value entered was not correct please try again.");
 					Scanner milesSelect1 = new Scanner(System.in);
-					String tempMilesSelect1 = milesSelect1.nextLine();
-					conversionSelection = Integer.parseInt(tempMilesSelect1);
+					conversionSelection = milesSelect1.nextInt();
 				}
 				
 				switch (conversionSelection) {
 				case 1:
 					System.out.println("How many Feet would you like to convert to miles?");
 					Scanner conversionAmtSelect = new Scanner(System.in);
-					String tempConversionAmt = conversionAmtSelect.nextLine();
-					conversionAmt = Double.parseDouble(tempConversionAmt);
+					conversionAmt = conversionAmtSelect.nextDouble();
 					conversion.convertFeetToMiles(conversionAmt);
 					break;
 				case 2:
 					System.out.println("How many Yards would you like to convert to miles?");
 					Scanner conversionAmtSelect1 = new Scanner(System.in);
-					String tempConversionAmt1 = conversionAmtSelect1.nextLine();
-					conversionAmt = Double.parseDouble(tempConversionAmt1);
+					conversionAmt = conversionAmtSelect1.nextDouble();
 					conversion.convertYardsToMiles(conversionAmt);
 					break;
 				case 3:
 					System.out.println("How many Kilometers would you like to convert to miles?");
-					Scanner conversionAmtSelect11 = new Scanner(System.in);
-					String tempConversionAmt11 = conversionAmtSelect11.nextLine();
-					conversionAmt = Double.parseDouble(tempConversionAmt11);
+					Scanner conversionAmtSelect2 = new Scanner(System.in);
+					conversionAmt = conversionAmtSelect2.nextDouble();
 					conversion.convertKilometersToMiles(conversionAmt);
 				}
 			}
@@ -89,51 +82,44 @@ public class Converter {
 				System.out.println("-- Enter 5 for Liters to Gallons");
 				
 				Scanner gallonsSelect = new Scanner(System.in);
-				String tempGallonsSelect = gallonsSelect.nextLine();
-				conversionSelection = Integer.parseInt(tempGallonsSelect);
+				conversionSelection = gallonsSelect.nextInt();
 				
 				//input validation
 				while (conversionSelection < 0 || conversionSelection > 5) {
 					System.out.println("Value entered was not correct please try again.");
 					Scanner gallonsSelect1 = new Scanner(System.in);
-					String tempGallonsSelect1 = gallonsSelect1.nextLine();
-					conversionSelection = Integer.parseInt(tempGallonsSelect1);
+					conversionSelection = gallonsSelect1.nextInt();
 				}
 				
 				switch (conversionSelection) {
 				case 1:
 					System.out.println("How many Quarts would you like to convert to Gallons?");
 					Scanner conversionAmtSelect = new Scanner(System.in);
-					String tempConversionAmt = conversionAmtSelect.nextLine();
-					conversionAmt = Double.parseDouble(tempConversionAmt);
+					conversionAmt = conversionAmtSelect.nextDouble();
 					conversion.convertQuartsToGallons(conversionAmt);
 					break;
 				case 2:
 					System.out.println("How many Pints would you like to convert to Gallons?");
 					Scanner conversionAmtSelect1 = new Scanner(System.in);
-					String tempConversionAmt1 = conversionAmtSelect1.nextLine();
-					conversionAmt = Double.parseDouble(tempConversionAmt1);
+					conversionAmt = conversionAmtSelect1.nextDouble();
 					conversion.convertPintsToGallons(conversionAmt);
 					break;
 				case 3:
 					System.out.println("How many Cups would you like to convert to Gallons?");
-					Scanner conversionAmtSelect11 = new Scanner(System.in);
-					String tempConversionAmt11 = conversionAmtSelect11.nextLine();
-					conversionAmt = Double.parseDouble(tempConversionAmt11);
+					Scanner conversionAmtSelect2 = new Scanner(System.in);
+					conversionAmt = conversionAmtSelect2.nextDouble();
 					conversion.convertCupsToGallons(conversionAmt);
 					break;
 				case 4:
 					System.out.println("How many Fluid Ounces would you like to convert to Gallons?");
-					Scanner conversionAmtSelect111 = new Scanner(System.in);
-					String tempConversionAmt111 = conversionAmtSelect111.nextLine();
-					conversionAmt = Double.parseDouble(tempConversionAmt111);
+					Scanner conversionAmtSelect3 = new Scanner(System.in);
+					conversionAmt = conversionAmtSelect3.nextDouble();
 					conversion.convertFluidOuncesToGallons(conversionAmt);
 					break;
 				case 5:
 					System.out.println("How many Liters would you like to convert to Gallons?");
-					Scanner conversionAmtSelect1111 = new Scanner(System.in);
-					String tempConversionAmt1111 = conversionAmtSelect1111.nextLine();
-					conversionAmt = Double.parseDouble(tempConversionAmt1111);
+					Scanner conversionAmtSelect4 = new Scanner(System.in);
+					conversionAmt = conversionAmtSelect4.nextDouble();
 					conversion.convertLitersToGallons(conversionAmt);
 				}
 			}
