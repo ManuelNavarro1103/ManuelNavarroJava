@@ -26,7 +26,7 @@ public class RoomManager {
 		Room livingRoom = new Room(
 				"Living Room",
 				"large comfy living room",
-				"The large comfy living room was filled with multiple couches and the comfiest looking recliner"+"\n"+"all facing the tv. The dining room/kitchen is open to the west, where the smell of something baking"+"\n"+"in the oven filled your nose from there. To the south is the entry hallway, where you entered"+"\n"+"the house from.");
+				"The large comfy living room was filled with multiple couches and the comfiest looking recliner"+"\n"+"all facing the tv still playing re-runs of the office. The dining room/kitchen is open to the west, where the smell of something baking"+"\n"+"in the oven filled your nose from there. To the south is the entry hallway, where you entered the house from.");
 		this.rooms[2] = livingRoom;
 		
 		Room bedroom = new Room(
